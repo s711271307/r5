@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>就業服務乙級模擬測驗</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 20px; line-height: 1.6; }
+        .question { margin-bottom: 20px; padding: 15px; border: 1px solid #ddd; border-radius: 8px; }
+        .error-item { color: #d9534f; background: #f9f2f4; padding: 10px; margin-top: 10px; border-radius: 5px; }
+        button { padding: 10px 20px; background-color: #5cb85c; color: white; border: none; cursor: pointer; }
+        #result { margin-top: 30px; display: none; }
+    </style>
+</head>
+<body>
+    <h1>就業服務乙級 - 隨機 20 題模擬測驗</h1>
+    <p id="practice-count">載入練習紀錄中...</p>
+    
+    <div id="quiz-container"></div>
+    <button onclick="submitQuiz()">交卷並查看結果</button>
+
+    <div id="result">
+        <h2>練習結果報告</h2>
+        <div id="score-info"></div>
+        <div id="error-list"></div>
+        <button onclick="location.reload()">重新練習</button>
+    </div>
+
+    <!-- 引用主程式 -->
+    <script src="script.js"></script>
+</body>
+</html>
